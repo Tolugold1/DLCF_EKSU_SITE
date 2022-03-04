@@ -1,0 +1,611 @@
+body {
+    background-color:rgb(22, 6, 69);
+    font-family: "Oxygen", san-serif;
+    font-size: 16px;
+}
+#header-nav {
+    background-color: rgb(204, 111, 6);
+    border-radius: 0px;
+    border: 0;
+    margin: 0px; 
+}
+.navbar-header img {
+    height : 100px;
+    width: 100px;
+    margin: 0px;
+}
+.navbar-brand {
+    padding: 2px;
+}
+.navbar-brand h1 {
+    font-weight: bolder;
+    text-decoration: capitalize;
+    margin-left: 50px;
+    font-style: strong;
+    text-shadow: 1px 1px 1px rgb(104, 160, 168);
+    line-height: .75;
+    color: white;
+    font-family: "montserrat", san-serif;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+.navbar-brand p {
+    color: white;
+    font-size: .7em;
+    margin-top: 10px;
+    margin-left: 50px 
+}
+.navbar-brand span p {
+    vertical-align: right;
+    text-shadow:  1px white;
+    margin-left: 15px;
+}
+.navbar-brand img {
+    height:20px;
+    width: 20px;
+    margin-top: 1px;
+    margin-left: 5px;
+}
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a {
+    text-align: center;
+    color: white;
+}
+#nav-list a:hover{
+    color: rgb(247, 223, 195);
+}
+#nav-list a span {
+    font-size: 1.8em
+}
+#phone {
+    margin-top: 5px;
+}
+#phone a {
+    text-align: center;
+    padding-bottom: 0;
+    font-size: 10px;
+}
+#phone div {
+    color: white;
+    text-align: center;
+    padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top:-30px;
+}
+
+
+
+
+
+@media (min-width: 1200px){
+    .container .jumbotron {
+        background-image: url("../css/images/dlcflogo4.jpeg");
+        height: 638px;
+        border: 2px solid rgb(204, 111, 6);
+        box-shadow: 0 0 50px rgb(204, 111, 6);
+        margin-top: 20px;
+    }
+    .jumbotron #welcome {
+        margin: 20px 140px 150px 340px;
+        font-family: Montserrat;
+        font-size: 30px;
+    }
+    .jumbotron #welcome #round {
+        border-radius: 50%;
+        height:300px;
+        width:300px;
+        background-color:rgb(187, 89, 23);
+        opacity: 0.8;
+    }
+    .jumbotron #welcome p {
+         margin-left:  -50px;
+         margin-right: 100px;
+         color: white;
+         text-transform: capitalize;
+    }
+    .jumbotron #welcome  .p2 {
+        margin-left:  -190px;
+        margin-right: 100px;
+        color: white;
+        word-spacing: 20px;
+        font-size: 25px;
+        margin-top:50px;
+    }
+    .jumbotron #welcome  .p2  strong{
+        color: rgb(22, 6, 69);
+    }
+    .jumbotron #welcome  .p2  strong:hover {
+        color:rgb(204, 111, 6);
+    }
+    .jumbotron #welcome  .p1 {
+        margin-left:  -190px;
+        letter-spacing: 70px;
+        font-weight: bolder;
+        font-size: 30px;
+        color: white;
+    }
+    .jumbotron #welcome  .p1 strong {
+        color:rgb(22, 6, 69);
+        font-weight: bolder;
+        font-size: 2em;
+    }
+    .jumbotron #welcome  .p1  strong:hover {
+        color:rgb(204, 111, 6);
+    }
+    #round div  {
+        padding:110px 30px;
+        color: white;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    #pastors .mcampus .A{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 380px;
+        background: no-repeat;
+    }
+    #pastors .pcampus .B{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 380px;
+        background: no-repeat;
+    }
+    #pastors .ucampus .C{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 380px;
+        background: no-repeat;
+    }
+    #pastors .icampus .D{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 380px;
+        background: no-repeat;
+    }
+    #pastors .scampus .E{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 380px;
+        background: no-repeat;
+    }
+    #pastors .sacampus .F{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 380px;
+        background: no-repeat;
+    }
+    .container-fluid .row {
+        background-color:rgb(236, 206, 105);
+        padding: 60px;
+    }
+}
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .container .jumbotron {
+        background-image: url("../css/images/dlcflogomd.jpeg");
+        height: 538px;
+        border: 2px solid rgb(204, 111, 6);
+        box-shadow: 0 0 50px rgb(204, 111, 6);
+        margin-top: 20px;
+    }
+    #logo-img {
+        background: url("http://localhost:3000/css/images/logp1.png") no-repeat;
+        height: 20x;
+        width: 100px;
+        margin: 2px 2px 2px 0
+    }
+    .navbar-brand h1 {
+        margin-right:15px;
+        font-size: 1.5em;
+    }
+    h1 {
+        margin-right: 600px
+    }
+    .jumbotron #welcome {
+        margin: 5px 100px 50px 280px;
+        font-family: Montserrat;
+        font-size: 20px;
+    }
+    .jumbotron #welcome #round {
+        border-radius: 50%;
+        height:250px;
+        width:250px;
+        background-color:rgb(187, 89, 23);
+        opacity: 0.8;
+    }
+    .jumbotron #welcome p {
+         margin-left:  -50px;
+         margin-right: 100px;
+         color: white;
+         text-transform: capitalize;
+    }
+    .jumbotron #welcome  .p2 {
+        margin-left:  -110px;
+        margin-right: 50px;
+        color: white;
+        word-spacing: 20px;
+        font-size: 20px;
+        margin-top:50px;
+    }
+    .jumbotron #welcome  .p2  strong{
+        color: rgb(22, 6, 69);
+    }
+    .jumbotron #welcome  .p2  strong:hover {
+        color:rgb(204, 111, 6);
+    }
+    .jumbotron #welcome  .p1 {
+        margin-left:  -110px;
+        letter-spacing: 50px;
+        font-weight: bolder;
+        font-size: 25px;
+        color: white;
+    }
+    .jumbotron #welcome  .p1 strong {
+        color:rgb(22, 6, 69);
+        font-weight: bolder;
+        font-size: 2em;
+    }
+    .jumbotron #welcome  .p1  strong:hover {
+        color:rgb(204, 111, 6);
+    }
+    #round div  {
+        padding:110px 30px;
+        color: white;
+        text-align: center;
+        text-transform: capitalize;
+    }    
+    #pastors .mcampus .A{
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 300px;
+    }
+    #pastors .pcampus .B{
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 300px;
+    }
+    #pastors .ucampus .C{
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 300px;
+    }
+    #pastors .icampus .D{
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 300px;
+    }
+    #pastors .scampus .E{
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 300px;
+    }
+    #pastors .sacampus .F{
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 300px;
+    }
+    .container-fluid .row {
+        background-color:rgb(236, 206, 105);
+        padding: 60px;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron {
+        background-image: url("../css/images/dlcflogosm.jpeg");
+        height: 500px;
+        border: 2px solid rgb(204, 111, 6);
+        box-shadow: 0 0 50px rgb(204, 111, 6);
+        margin-top: 20px;
+    }
+    #header-nav {
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        margin-left: -15px;
+        font-size: 1.5em;
+        line-height: .45;
+    }
+    .navbar-brand p {
+        margin-left: -15px;
+    }
+    .navbar-right {
+        margin-right:-14px;
+    }
+    .navbar-right ul a span {
+        font-size: 2em ; 
+    }
+    #nav-list .navbar-nav  ul a span{
+        font-size: 1.5em;
+        margin-right: -50px;
+    }
+    .jumbotron #welcome {
+        margin: 0px 70px 50px 170px;
+        font-family: Montserrat;
+        font-size: 15px;
+    }
+    .jumbotron #welcome #round {
+        border-radius: 50%;
+        height:200px;
+        width:200px;
+        background-color:rgb(187, 89, 23);
+        opacity: 0.8;
+    }
+    .jumbotron #welcome p {
+         margin-left:  -50px;
+         margin-right: 80px;
+         color: white;
+         text-transform: capitalize;
+    }
+    .jumbotron #welcome  .p2 {
+        margin-left:  -130px;
+        margin-right: 10px;
+        color: white;
+        word-spacing: 10px;
+        font-size: 20px;
+        margin-top:40px;
+    }
+    .jumbotron #welcome  .p2  strong{
+        color: rgb(22, 6, 69);
+    }
+    .jumbotron #welcome  .p2  strong:hover {
+        color:rgb(204, 111, 6);
+    }
+    .jumbotron #welcome  .p1 {
+        margin-left:  -150px;
+        letter-spacing: 50px;
+        font-weight: bolder;
+        font-size: 20px;
+        color: white;
+    }
+    .jumbotron #welcome  .p1 strong {
+        color:rgb(22, 6, 69);
+        font-weight: bolder;
+        font-size: 2em;
+    }
+    .jumbotron #welcome .p1 strong:hover{
+        color:rgb(204, 111, 6);
+    }
+    #round div  {
+        padding:78px 30px;
+        color: white;
+        text-align: center;
+        text-transform: capitalize;
+    }   
+    #pastors .mcampus .A{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 200px;
+    }
+    #pastors .pcampus .B{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 200px;
+    }
+    #pastors .ucampus .C{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 200px;
+    }
+    #pastors .icampus .D{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 200px;
+    }
+    #pastors .scampus .E{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 200px;
+    }
+    #pastors .sacampus .F{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 200px;
+    }
+    .container-fluid .row {
+        background-color:rgb(236, 206, 105);
+        padding: 60px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .container .jumbotron{ 
+        border: 2px solid rgb(204, 111, 6);
+        box-shadow: 0 0 50px rgb(204, 111, 6);
+        margin-top: 20px;
+        padding: 0px;
+    } 
+    .navbar-brand {
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        margin-left: 5px;
+        font-size: 1.5em;
+        line-height: .45;
+    }
+    .navbar-brand p {
+        margin-left: 5px;
+    }
+    #header-nav button .navbar-toggle #collapsable-nav .navbar-nav {
+        height: auto;
+    }
+
+    #call-btn {
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        height: 50px;
+        margin: 15px 20px 15px 20px;
+        background-color:rgb(39, 38, 19);
+        border-radius: 20px;
+        border-color:5px solid azure;
+    }
+    #call-btn a span {
+        font-size: 17px;
+    }
+    #call-btn a {
+        font-size: 1em;
+        color: white;
+    }
+    h3 {
+        font-size:13px;
+        color: white;
+        margin-top: 10px;
+
+    }
+    h1 {
+        margin-left: 60px;
+        color:white;
+        margin-bottom: 5px;
+        letter-spacing: 20px;
+    }
+    h1:hover {
+        color:rgb(204, 111, 6);
+    }
+    .container .jumbotron #pastors .mcampus .A{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 144px;
+        margin-top: 20px;
+    }
+    .container .jumbotron #pastors .pcampus .B{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 140px;
+    }
+    .container .jumbotron #pastors .ucampus .C{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 140px;
+    }
+    .container .jumbotron #pastors .icampus .D{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 140px;
+    }
+    .container .jumbotron #pastors .scampus .E{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 140px;
+    }
+    .container .jumbotron #pastors .sacampus .F{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 140px;
+    }
+    .container-fluid .row {
+        background-color:rgb(236, 206, 105);
+        padding: 60px;
+    }
+}
+
+
+#info {
+    margin-top: 40px;
+    color: black;
+    line-height: 1.5;
+}
+#day:hover {
+    color: white;
+}
+#location:hover {
+    color:white;
+}
+#focus:hover {
+    color: white;
+}
