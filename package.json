@@ -1,0 +1,24 @@
+{
+  "name": "web_design",
+  "version": "1.0.0",
+  "description": "Eksu site",
+  "main": "webdesign.html",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tolugold1/web_design.git"
+  },
+  "author": "Adeleke Tolulope",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tolugold1/web_design/issues"
+  },
+  "homepage": "https://github.com/Tolugold1/web_design#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
