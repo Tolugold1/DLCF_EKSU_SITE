@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dlcf Eksu Chapter</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel = "stylesheet" href= "css/web.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
   </head>
   <body>
     <header>
-      <nav class= "navbar fixed-top navbar-expand-sm navbar-light">
+      <nav class= "navbar  navbar-expand-sm navbar-light">
         <div class="container">
           <div class= "navbar-header nav nav-pills">
-            <a class="navbar-brand" id = "first" href= "webdesign.html">
+            <a class="navbar-brand" id = "first" href= "#">
               <img src = "css/images/logp1.png" alt="logo" class= "d-inline-block align-text-top d-sm-none d-md-block ">
             </a>
             <div class="nav nav-pills" id ="second">
-              <a class="link" href="webdesign.html"><h1>DLCF EKSU PORTAL</h1></a>
+              <a class="link" href="#"><h1>DLCF EKSU PORTAL</h1></a>
             </div>
           </div>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,23 +35,29 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                <a class="nav-link" id="account" data-bs-target="#signin" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
                   <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
                   <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                  </svg>Login
+                  </svg>account
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+                <a class="nav-link" href="#accordion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
                   <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                   </svg>Info
                 </a>
               </li>
-              <li class="nav-item d-none d-sm-block">
-                <a id="phone" class="nav-link" href="tel:08148758013"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+              <li class="nav-item d-block dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
                   <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
-                  </svg>08148758014
+                  </svg>Admin
                 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" data-bs-target="#Escos" data-bs-toggle="modal">Workers</a></li>
+                  <li><a class="dropdown-item" data-bs-target="#Escos" data-bs-toggle="modal">Escos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item disabled" data-bs-target="#Escos" data-bs-toggle="modal">Pastors</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -60,12 +65,126 @@
       </nav>
     </header>
 
-    <div class="call-btn d-block d-sm-none d-flex justify-content-center mt-auto">
-      <a id="phne" class="btn" href="tel:08148758013"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-      </svg>08148758013
-      </a>
+    <div class="modal fade" id="Escos">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Fill in your verification token</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-4">
+              <div class="col-12 col-sm-12">
+                <label class="form-label" for="token">Token</label>
+                <input class="form-control" type="text" placeholder="Enter the token given to you">
+              </div>
+              <div class="col-12 offset-sm-10">
+                <a type="button" href="" class="btn btn-outline-warning btn-sm">Verify</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="modal fade" id="signin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Fill the form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="form-text">please kindly give us your information by filling the form bellow correctly</div>
+              <div class="col-sm-6">
+                <label class="form-label" for="FirstName">First Name</label>
+                <input type="text" class="form-control" id="Surname" max="20" placeholder="Enter your surname here" required>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" for="otherName">Other name</label>
+                <input type="text" class="form-control" id="otherName" max="25" placeholder="Enter your other name" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="faculty" class="form-label">Faculty</label>
+                <input type="text" class="form-control" id="faculty" placeholder="Enter your faculty" required> 
+              </div>
+              <div class="col-sm-6">
+                <label for="department" class="form-label">Department</label>
+                <input type="text" class="form-control" id="department" placeholder="Enter your department" required> 
+              </div>
+              <div class="col-sm-12">
+                <label for="address" class="form-label">Hostel Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your hostel address" required> 
+              </div>
+              <div class="col-sm-6">
+                <label for="Telno" class="form-label">Phone number</label>
+                <input type="tel" class="form-control" id="Telno" placeholder="Enter your phone number" required> 
+              </div>
+              <div class="col-sm-6">
+                <label for="Telno" class="form-label">Other phone number</label>
+                <input type="tel" class="form-control" id="Telno" placeholder="Enter your phone number" required> 
+              </div>
+              <div class="col-sm-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="status" id="firstTimer">
+                  <label class="form-check-label" for="firstTimer">First Timer</label>
+                </div>
+              </div>
+              <div class="col-sm-3">
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="status" id="Member">
+                  <label class="form-check-label" for="Member">Member</label>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="status" id="WorkerToBe">
+                  <label class="form-check-label" for="WorkerToBe">Intend worker</label>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="status" id="Worker">
+                  <label class="form-check-label" for="Worker">Worker</label>
+                </div>
+              </div>
+              <div class="form-text">Fill in your email address to get upcoming programs update.<br> Optinal</div>
+              <div class="col-sm-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="address@email.com">
+              </div>
+              <div class="col-auto offset-sm-9">
+                <button type="submit" class="btn btn-outline-primary btn-sm" data-bs-target="#accept" data-bs-toggle="modal">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal  fade" id="accept">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Good of you</h5>
+            <button type="buttom" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-align-center">
+                <h3 style="font-weight:bold; color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Information accepted</h3><br><p>Thanks for being faithfull as you have filled in the correct information.</p>
+                <button type="button" class="btn btn-secondary btn-sm offset-sm-10" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    
+
     <div id="main-content" class="container mt-auto">
       <div class="jumbotron">
         <div id = "welcome">
@@ -75,7 +194,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div id="slider">
         <ul>
           <li class="list-unstyled">
@@ -160,116 +279,152 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12 col-md-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-8 offset-sm-1 bk">
-              <div class="card">
-                <img src="css/pastor kumuyi.jpeg" class="card-item-top img-fluid">
-                <div class="card-body">
-                  <blockquote class="blockquote">
-                    <p>Your spiritual welfare is our concern</p>
-                  </blockquote>
-                  <footer class="blockquote-footer">
-                    <cite class="Source Title"><em>Deeper Christian Life Ministry</em></cite>
-                  </footer>
+    <div class="container-fluid d-none d-sm-block" id="display">
+      <div id="carouselDisplay" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="h">
+            <img class="img-fluid" src="./css/images/churchgathering.jpg" alt="Do not forsake the gathering of the brethren">
+            <div class="carousel-caption d-none d-sm-block">
+              <h2 style="font-weight:bold; font-family:Montserrat;">Pray</h2>
+              <p style="font-weight:bold; font-family:Montserrat;">And in the morning, rising up a great while before day, he went out, and departed into a solitary place, and there prayed<br>
+                Mark 1 : 35.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" id="second">
+            <img class="img-fluid" src="./css/images/fellowship.jpg" alt="Forsake not the fellowship">
+            <div class="carousel-caption d-none d-sm-block">
+              <h2 style="font-weight:bold; font-family:Montserrat;">Fellowship</h2>
+              <p style="font-weight:bold; font-family:Montserrat;">Not forsaking the assembling of ourselves together, as the manner of some is, but exhorting one another and so much the more, as ye see the day approaching.<br> <b>Hebrews 10 : 25</b></p>
+            </div>
+          </div>
+  
+          <div class="carousel-item" id="third">
+            <img src="./css/images/newlife.jpeg">
+            <div class="carousel-caption d-none d-sm-block">
+              <h2 style="font-weight:bold; font-family:Montserrat;">New creature</h2>
+              <p style="font-weight:bold; font-family:Montserrat;">Therefore if any man be in christ, he is a new creature; old things are passed away; behold, all things are become new.<br> <b>2 Corinthians 5 : 17</b></p>
+            </div>
+          </div>
+          <div class="carousel-item" id="fourth">
+            <img src="./css/images/program.jpeg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="card-slider">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-8 offset-sm-1 bk">
+                <div class="card">
+                  <img src="css/pastor kumuyi.jpeg" class="card-item-top img-fluid">
+                  <div class="card-body">
+                    <blockquote class="blockquote">
+                      <p>Your spiritual welfare is our concern</p>
+                    </blockquote>
+                    <footer class="blockquote-footer">
+                      <cite class="Source Title"><em>Deeper Christian Life Ministry</em></cite>
+                    </footer>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-sm-12 col-md-7">
-        <div class="container" id="accordion">
-          <div class="accordion" id="brief-information">
-            <div class="row">
-              <div class="col-12 col-sm-8 offset-sm-2">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="header1">
-                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Days of service</button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#brief-information">
-                    <div class="accordion-body">
-                      <div class="table-responsive">
-                        <table class="table table-hover">
-                          <thead class="table-dark">
-                            <th scope="col">Id</th>
-                            <th scope="col">Day</th>
-                            <th scope="col">Service</th>
-                            <th scope="col">Time</th>
-                            <th scope="col">Location</th>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>Sunday</td>
-                              <td>Sunday Worship Service</td>
-                              <td>8:00AM prompt</td>
-                              <td class="disable ml-2">@anylocationclosetoyou</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2</th>
-                              <td>Monday</td>
-                              <td>Monday Bible Study</td>
-                              <td>5:50PM prompt</td>
-                              <td class="disable ml-2">@anylocationclosetoyou</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td>Thursday</td>
-                              <td>Thursday Revival Hour</td>
-                              <td>5:30pm prompt</td>
-                              <td class="disable ml-2">@anylocationclosetoyou</td>
-                            </tr>
-                          </tbody>
-                        </table>
+  
+        <div class="col-sm-12 col-md-7">
+          <div class="container" id="accordion">
+            <div class="accordion" id="brief-information">
+              <div class="row">
+                <div class="col-12 col-sm-8 offset-sm-2">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="header1">
+                      <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Days of service</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#brief-information">
+                      <div class="accordion-body">
+                        <div class="table-responsive">
+                          <table class="table table-hover">
+                            <thead class="table-dark">
+                              <th scope="col">Id</th>
+                              <th scope="col">Day</th>
+                              <th scope="col">Service</th>
+                              <th scope="col">Time</th>
+                              <th scope="col">Location</th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Sunday</td>
+                                <td>Sunday Worship Service</td>
+                                <td>8:00AM prompt</td>
+                                <td class="disable ml-2">@anylocationclosetoyou</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Monday</td>
+                                <td>Monday Bible Study</td>
+                                <td>5:50PM prompt</td>
+                                <td class="disable ml-2">@anylocationclosetoyou</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Thursday</td>
+                                <td>Thursday Revival Hour</td>
+                                <td>5:30pm prompt</td>
+                                <td class="disable ml-2">@anylocationclosetoyou</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-sm-8 offset-sm-2">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="header2">
-                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                      Special programs
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelled="header2" data-bs-parent="#brief-information">
-                    <div class="accordion-body">
-                      <div class="row">
-                        <div class="col-12 col-sm-12">
-                          <div class="card">
-                            <h2 class="card-header bg-warning">
-                              Global Crusade
-                            </h2>
-                            <div class="card-body">
-                              <dl class="mb-3">
-                                <div class="row">
-                                  <dd class="col-sm-5 offset-sm-1">Theme</dd>
-                                  <dt class="col-sm-6"><P><em>full</em><strong> Redemption</strong> <em>for all through</em> <strong>Christ</strong></P></dt>
-                                </div>
-                                <div class="row">
-                                  <dd class="col-sm-5 offset-sm-1">Anchor</dd>
-                                  <dt class="col-sm-6"> Pastor (Dr.) W.F Kumuyi</dt>
-                                </div>
-                                <div class="row">
-                                  <dd class="col-sm-5 offset-sm-1">Date</dd>
-                                  <dt class="col-sm-6">24th - 29th<br> March, 2022</dt>
-                                </div>
-                                <div class="row">
-                                  <dd class="col-sm-5 offset-sm-1">Time</dd>
-                                  <dt class="col-sm-6"><strong>1600 GMT</strong><em>daily</em><br> <strong>1700 GMT</strong><em>on sunday</em></dt>
-                                </div>
-                              </dl>
+              <div class="row">
+                <div class="col-12 col-sm-8 offset-sm-2">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="header2">
+                      <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Special programs
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelled="header2" data-bs-parent="#brief-information">
+                      <div class="accordion-body">
+                        <div class="row">
+                          <div class="col-12 col-sm-12">
+                            <div class="card">
+                              <h2 class="card-header bg-warning">
+                                Global Crusade
+                              </h2>
+                              <div class="card-body">
+                                <dl class="mb-3">
+                                  <div class="row">
+                                    <dd class="col-sm-5 offset-sm-1">Theme</dd>
+                                    <dt class="col-sm-6"><P><em>full</em><strong> Redemption</strong> <em>for all through</em> <strong>Christ</strong></P></dt>
+                                  </div>
+                                  <div class="row">
+                                    <dd class="col-sm-5 offset-sm-1">Anchor</dd>
+                                    <dt class="col-sm-6"> Pastor (Dr.) W.F Kumuyi</dt>
+                                  </div>
+                                  <div class="row">
+                                    <dd class="col-sm-5 offset-sm-1">Date</dd>
+                                    <dt class="col-sm-6">24th - 29th<br> March, 2022</dt>
+                                  </div>
+                                  <div class="row">
+                                    <dd class="col-sm-5 offset-sm-1">Time</dd>
+                                    <dt class="col-sm-6"><strong>1600 GMT</strong><em>daily</em><br> <strong>1700 GMT</strong><em>on sunday</em></dt>
+                                  </div>
+                                </dl>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -288,17 +443,17 @@
           <div class="col-12 col-sm-2 offset-sm-1 nav-link">
             <h5>Goto:</h5>
               <ul class="list-unstyled">
-                <li class="active "><a href="webdesign.html">Home</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">info</a></li>
-                <li><a href="#">contact</a></li>
+                <li class="active "><a href="#">Home</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#accordion">info</a></li>
+                <li><a href="tel:08148758013">contact</a></li>
               </ul>
           </div>
           <div class="col-12 col-sm-4">
             <address>
               <h5>Address</h5>
               <p>Deeper life campus fellowship, Eksu Chapter</p><br>
-                <p><i class="bi bi-telephone-x-fill"></i>: 08148758013</p><br>
+              <p><i class="bi bi-telephone-x-fill"></i>: 08148758013</p><br>
                 <p><i class="bi bi-envelope-fill"></i>: toluadelekesteve@gmail.com</p>
             </address>
           </div>
@@ -311,7 +466,7 @@
                 <input type="email" class="form-control" id="email" placeholder="Enter your email">
               </div>
               <div class="col-12 col-sm-4 ">
-                <button class="btn btn-primary" type="submit">Subscribe</button>
+                <button class="btn btn-primary" type="submit" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="<strong>Subscribe now</strong>">Subscribe</button>
               </div>
             </div>
           </div>
@@ -333,9 +488,16 @@
         </div>
       </div> 
     </footer>
-	  <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+
     <script>
       (function(){
         'use strict';
@@ -363,6 +525,7 @@
 
         contentRotator();
       }());
+      $('')
     </script>
   </body>
 </html>

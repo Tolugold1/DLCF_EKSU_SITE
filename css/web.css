@@ -7,6 +7,7 @@ header {
 }
 .navbar {
     background-color: rgb(204, 111, 6);
+    position: relative;
 }
 #second h1 {
     font-family: Montserrat;
@@ -20,8 +21,8 @@ header {
     width: 100px;
 }
 svg {
-    height: 30px;
-    width:30px;
+    height: 15px;
+    width:15px;
     color: white;
     margin: 10px;
 }
@@ -67,14 +68,19 @@ li .nav-item {
 
 #accordion {
     margin-top: 10px;
-    
 }
 
 
 
 @media (min-width: 1200px) {
+    svg {
+        height: 30px;
+        width:30px;
+        color: white;
+        margin: 10px;
+    }
     .navbar-nav .nav-link {
-        font-size: 30px;
+        font-size: 25px;
         font-family:Arial, Helvetica, sans-serif;
         font-weight: bold;
         padding-right: 20px;
@@ -88,7 +94,7 @@ li .nav-item {
     .container .jumbotron {
         background-image: url(./images/dlcflogo4.jpeg);
         height: 600px;
-        margin-top: 150px;
+        margin-top: 20px;
         box-shadow: 0 0 50px rgb(204, 111, 6);
     }
     
@@ -147,12 +153,24 @@ li .nav-item {
         text-align: center;
         text-transform: capitalize;
     }
+    .carousel-caption h2 {
+        font-size:80px
+    }
+    .carousel-caption p {
+        font-size: 50px;
+    }
 }
 
 
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    svg {
+        height: 25px;
+        width:25px;
+        color: white;
+        margin: 10px;
+    }
     div .nav .nav-pills h1 {
         text-decoration: none;
         color: rgb(0,0,0,.55);
@@ -165,7 +183,7 @@ li .nav-item {
         font-weight: bolder;
     }
     .navbar-nav .nav-link {
-        font-size: 20px;
+        font-size: 15px;
         font-family:Arial, Helvetica, sans-serif;
         font-weight: bold;
     }
@@ -177,7 +195,7 @@ li .nav-item {
         background-image: url(./images/dlcflogomd.jpeg);
         height: 550px;
         box-shadow: 0 0 50px solid rgb(204, 111, 6);
-        margin-top: 130px;
+        margin-top: 20px;
     }
     .jumbotron #welcome {
         padding-top: 50px;
@@ -233,12 +251,25 @@ li .nav-item {
         text-align: center;
         text-transform: capitalize;
     }
+
+    .carousel-caption h2 {
+        font-size:70px
+    }
+    .carousel-caption p {
+        font-size: 40px;
+    }
 }
 
 
 
 
 @media (min-width: 770px) and (max-width: 991px){
+    svg {
+        height: 20px;
+        width:20px;
+        color: white;
+        margin: 10px;
+    }
     #second h1 {
         font-family: Montserrat;
         font-size: 18px;
@@ -257,7 +288,7 @@ li .nav-item {
     .container .jumbotron {
         background-image: url(./images/dlcflogosm.jpeg); 
         height: 500px;
-        margin-top: 100px;
+        margin-top: 20px;
     }
     svg {
         height: 30px;
@@ -320,11 +351,21 @@ li .nav-item {
         text-align: center;
         text-transform: capitalize;
     }
+
+    .carousel-caption h2 {
+        font-size:60px
+    }
+    .carousel-caption p {
+        font-size: 30px;
+    }
 }
 
 
 
 @media (min-width: 576px) and (max-width: 769px) {
+    svg {
+        display: none;
+    }
     #second h1 {
         font-family: Montserrat;
         font-size: 18px;
@@ -332,10 +373,10 @@ li .nav-item {
         font-weight: bolder;
     }
     .navbar-nav .nav-link {
-        font-size: 10px;
+        font-size: 20px;
         font-family:Arial, Helvetica, sans-serif;
         font-weight: bold;
-        padding-right: 15px;
+        padding-right: 20px;
     }
     .navbar-brand img {
         height: 60px;
@@ -344,7 +385,7 @@ li .nav-item {
     .container .jumbotron {
         background-image: url(./images/dlcflogosm.jpeg); 
         height: 500px;
-        margin-top: 95px;
+        margin-top: 20px;
     }
     svg {
         height: 30px;
@@ -410,6 +451,13 @@ li .nav-item {
     #slider li img {
         height:auto;
     }
+
+    .carousel-caption h2 {
+        font-size:50px
+    }
+    .carousel-caption p {
+        font-size: 20px;
+    }
 }
 
 
@@ -451,6 +499,13 @@ li .nav-item {
     .container .jumbotron {
         margin-top: 30px;
     }
+
+    .carousel-caption h2 {
+        font-size:40px
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
 }
 
 #footer {
@@ -476,4 +531,24 @@ hr {
     color: black;
     height: 10px;
     background-color: black;
+}
+
+.container #display {
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#card-slider {
+    margin-top: 20px;
+}
+
+.carousel-caption {
+    background-color: rgb(125, 126, 127);
+    color: white;
+    opacity: 0.4;
+}
+
+.carousel-item {
+    object-fit: cover;
 }
